@@ -44,20 +44,19 @@
 
       @keyframes platerotat {
         0% {
-          transform: scale(0.2), rotate(50deg);
-          -webkit-transform: scale(0.2), rotate(50deg);
-          -moz-transform: scale(0.2), rotate(50deg);
-          -ms-transform: scale(0.2), rotate(50deg);
-          -o-transform: scale(0.2), rotate(50deg);
+          transform: rotate(20deg);
+          -webkit-transform: rotate(20deg);
+          -moz-transform: rotate(20deg);
+          -ms-transform: rotate(20deg);
+          -o-transform: rotate(20deg);
         }
-        5% {
-        }
-        30% {
-          transform: rotate(-360deg);
-          -webkit-transform: rotate(-360deg);
-          -moz-transform: rotate(-360deg);
-          -ms-transform: rotate(-360deg);
-          -o-transform: rotate(-360deg);
+
+        50% {
+          transform: rotate(-360deg) scale(0.2);
+          -webkit-transform: rotate(-360deg) scale(0.2);
+          -moz-transform: rotate(-360deg) scale(0.2);
+          -ms-transform: rotate(-360deg) scale(0.2);
+          -o-transform: rotate(-360deg) scale(0.2);
         }
         100% {
           opacity: 1;
