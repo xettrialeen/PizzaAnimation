@@ -1,0 +1,42 @@
+@import "../modules/functions";
+@import "../modules/variables";
+
+#pizza {
+  header {
+    padding: 20px;
+    @include flex-row();
+    justify-content: space-between;
+    .right-header {
+      flex: 1 0 auto;
+      h2 {
+        color: #fdfdff;
+        font-family: $cursive, sans-serif;
+        font-weight: 300;
+        font-size: 3em;
+        letter-spacing: 1px;
+        @include mq("max", "600px") {
+          font-size: 1em;
+        }
+      }
+    }
+    .left-header {
+      flex: 1 0 auto;
+      display: flex;
+      justify-content: flex-end;
+      .icons-list {
+        display: flex;
+        flex-direction: row;
+
+        span {
+          margin-left: 30px;
+          margin-top: 0px;
+          cursor: pointer;
+          i {
+            color: #fdfdff;
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+  }
+}

@@ -13,14 +13,61 @@
     <!-- ? Vue js -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 
-    <!-- ***  Google Fonts -->
+    <!-- c  Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <!-- ! icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
 </head>
 
 <body>
 
 
     <div id="pizza">
-        <h1>{{message}}</h1>
+        <header>
+            <div class="right-header">
+                <h2>Pizza-Hub</h2>
+            </div>
+            <div class="left-header">
+                <div class="icons-list">
+
+
+                    <span><i class="uil uil-search"></i></span>
+                    <span><i class="uil uil-heart"></i></span>
+                    <span><i class="uil uil-shopping-bag"></i></span>
+
+                </div>
+            </div>
+        </header>
+        <div class="pizza-content">
+            <div class="pizza-wrapper">
+                <div class="pizza-first">
+                    <div class="pizza-main-box">
+                        <div class="plate">
+                            <img class="plates" src="./images/pizza/Plate.png" alt="">
+                            <div class="bread">
+                                <img src="./images/pizza/Bread/Bread_1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="veg-parts">
+                            <div class="vp-image">
+                                <img class="vp1" src="./images/pizza/Basil/Basil_9.png" alt="">
+                                <img class="vp2" src="./images/pizza/Broccoli/Broccoli_1.png" alt="">
+                                <img class="vp3" src="./images/pizza/Extra/GreenSweetPepper.png" alt="">
+                                <img class="vp4" src="./images/pizza/Mushroom/Mushroom_1.png" alt="">
+                                <img class="vp5" src="./images/pizza/Onion/Onion_1.png" alt="">
+                                <img class="vp6" src="./images/pizza/Sausage/Sausage_1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="./vue/index.js"></script>
