@@ -54,7 +54,7 @@
 
                         <!-- c bl1 -->
                         <div @click=" swapFunc()" class="bread-list bl1">
-                            <img v-if="imageSwap === true" src=" ./images/pizza/Bread/Bread_1.png" alt="">
+                            <img v-if="imageSwap === true" src="./images/Bread_1-min.png" alt="">
                             <img v-else src=" ./images/pizza/Bread/Bread_3.png" alt="">
                         </div>
 
@@ -62,8 +62,8 @@
                         <!-- c bl2 -->
                         <div @click=" leftSwapFunc()" class="bread-list bl2">
                             <transition name="bl2fade">
-                                <img key='start' v-if="leftSwap===true" src="./images/pizza/Bread/Bread_4.png" alt="">
-                                <img key='stop' v-else src="./images/pizza/Bread/Bread_3.png" alt="">
+                                <img key='start' v-if="leftSwap===true" src="./images/Bread_4-min.png" alt="">
+                                <img key='stop' v-else src="./images/Bread_3-min.png" alt="">
 
                             </transition>
                         </div>
@@ -71,16 +71,16 @@
                         <!-- c bl3 -->
                         <div @click="nextPageFunc()" class="bread-list  bl3">
                             <div :class="{leftbl3:leftSwap===false}" class="left-image">
-                                <img v-if="imageSwap === true" src=" ./images/pizza/Bread/Bread_3.png" alt="">
-                                <img v-else src=" ./images/pizza/Bread/Bread_1.png" alt="">
+                                <img v-if="imageSwap === true" src="./images/Bread_3-min.png" alt="">
+                                <img v-else src="./images/Bread_1-min.png" alt="">
 
 
                             </div>
 
                             <div :class="{leftbl3:leftSwap===true}" @click="leftSwapFunc()" class="right-image">
-                                <img :style="{display:'none'}" v-if="leftSwap===true"
-                                    src="./images/pizza/Bread/Bread_3.png" alt="">
-                                <img v-else src="./images/pizza/Bread/Bread_4.png" alt="">
+                                <img :style="{display:'none'}" v-if="leftSwap===true" src="./images/Bread_3-min.png"
+                                    alt="">
+                                <img v-else src="./images/Bread_4-min.png" alt="">
                             </div>
 
 
@@ -88,7 +88,7 @@
                     </div>
                     <div :class="{rotateLeft:imageSwap==false,rotateRight:leftSwap==false}" class="pizza-main-box">
                         <div class="plate">
-                            <img class="plates" src="./images/pizza/Plate.png" alt="">
+                            <img class="plates" src="./images/Plate-min.png" alt="">
                             <!-- <div class="bread">
                                 <img src="./images/pizza/Bread/Bread_1.png" alt="">
                             </div> -->
@@ -109,7 +109,7 @@
                         <div class="pe-wrapper">
                             <div class="image-choose">
                                 <div class="image-relative">
-                                    <div class="i-lists il1">
+                                    <div @click="pepFunc()" class="i-lists il1">
                                         <img src="./images/pizza/Extra/GreenSweetPepper.png" alt="">
                                     </div>
                                     <div class="i-lists il2">
@@ -127,7 +127,29 @@
                                 </div>
                             </div>
                             <div class="images-list">
-
+                                <div :class="{imlwrapperon:pep==false} " class="iml-wrapper">
+                                    <div class="iml-l pep1 pepper">
+                                        <img src="./images/pizza/Extra/GreenSweetPepper.png" alt="">
+                                    </div>
+                                    <div class="iml-l pep2 pepper">
+                                        <img src="./images/pizza/Extra/GreenSweetPepper.png" alt="">
+                                    </div>
+                                    <div class="iml-l pep3 pepper">
+                                        <img src="./images/pizza/Extra/GreenSweetPepper.png" alt="">
+                                    </div>
+                                    <div class="iml-l pep4 pepper">
+                                        <img src="./images/pizza/Extra/GreenSweetPepper.png" alt="">
+                                    </div>
+                                    <div class="iml-l pep5 pepper">
+                                        <img src="./images/pizza/Extra/GreenSweetPepper.png" alt="">
+                                    </div>
+                                    <div class="iml-l pep6 pepper">
+                                        <img src="./images/pizza/Extra/GreenSweetPepper.png" alt="">
+                                    </div>
+                                    <div class="iml-l pep7 pepper">
+                                        <img src="./images/pizza/Extra/GreenSweetPepper.png" alt="">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

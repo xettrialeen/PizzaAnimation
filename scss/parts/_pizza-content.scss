@@ -4,6 +4,7 @@
 .pizza-content {
   overflow-y: scroll;
   height: 100vh;
+  scroll-behavior: smooth;
 
   &::-webkit-scrollbar {
     display: none;

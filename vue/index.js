@@ -6,6 +6,8 @@ const pizza = new Vue({
     leftSwap: true,
     bl2: true,
     nextpage: true,
+
+    pep: true,
   },
   methods: {
     // c nextpage opener
@@ -26,6 +28,11 @@ const pizza = new Vue({
     },
     bl2Func() {
       this.bl2 = !this.bl2;
+    },
+
+    pepFunc() {
+      this.pep = !this.pep;
+      console.log(this.pep);
     },
   },
 });
