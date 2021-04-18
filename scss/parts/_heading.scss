@@ -9,9 +9,9 @@
     .right-header {
       flex: 1 0 auto;
       h2 {
-        color: #fdfdff;
-        font-family: $cursive, sans-serif;
-        font-weight: 300;
+        color: $font-color;
+        font-family: $cursive;
+        font-weight: bold;
         font-size: 3em;
         letter-spacing: 1px;
         @include mq("max", "600px") {
@@ -32,7 +32,7 @@
           margin-top: 0px;
           cursor: pointer;
           i {
-            color: #fdfdff;
+            color: $light-font;
             font-size: 1.5em;
           }
         }

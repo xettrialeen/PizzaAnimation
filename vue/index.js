@@ -2,6 +2,21 @@ const pizza = new Vue({
   el: "#pizza",
   data: {
     message: "hello world",
+    imageSwap: true,
+    leftSwap: true,
+    bl2: true,
   },
-  methods: {},
+  methods: {
+    swapFunc() {
+      this.imageSwap = !this.imageSwap;
+      this.leftSwap = true;
+    },
+    leftSwapFunc() {
+      this.leftSwap = !this.leftSwap;
+      this.imageSwap = true;
+    },
+    bl2Func() {
+      this.bl2 = !this.bl2;
+    },
+  },
 });

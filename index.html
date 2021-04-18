@@ -13,6 +13,7 @@
     <!-- ? Vue js -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 
+
     <!-- c  Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Roboto:wght@700&display=swap"
@@ -20,7 +21,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- ! icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
 </head>
@@ -31,7 +34,7 @@
     <div id="pizza">
         <header>
             <div class="right-header">
-                <h2>Pizza-Hub</h2>
+                <h2>Pizzas</h2>
             </div>
             <div class="left-header">
                 <div class="icons-list">
@@ -47,12 +50,48 @@
         <div class="pizza-content">
             <div class="pizza-wrapper">
                 <div class="pizza-first">
-                    <div class="pizza-main-box">
+                    <div class="pizza-breads">
+
+                        <!-- c bl1 -->
+                        <div @click=" swapFunc()" class="bread-list bl1">
+                            <img v-if="imageSwap === true" src=" ./images/pizza/Bread/Bread_1.png" alt="">
+                            <img v-else src=" ./images/pizza/Bread/Bread_3.png" alt="">
+                        </div>
+
+
+                        <!-- c bl2 -->
+                        <div @click=" leftSwapFunc()" class="bread-list bl2">
+                            <transition name="bl2fade">
+                                <img key='start' v-if="leftSwap===true" src="./images/pizza/Bread/Bread_4.png" alt="">
+                                <img key='stop' v-else src="./images/pizza/Bread/Bread_3.png" alt="">
+
+                            </transition>
+                        </div>
+
+                        <!-- c bl3 -->
+                        <div class="bread-list  bl3">
+                            <div :class="{leftbl3:leftSwap===false}" class="left-image">
+                                <img v-if="imageSwap === true" src=" ./images/pizza/Bread/Bread_3.png" alt="">
+                                <img v-else src=" ./images/pizza/Bread/Bread_1.png" alt="">
+
+
+                            </div>
+
+                            <div :class="{leftbl3:leftSwap===true}" @click="leftSwapFunc()" class="right-image">
+                                <img :style="{display:'none'}" v-if="leftSwap===true"
+                                    src="./images/pizza/Bread/Bread_3.png" alt="">
+                                <img v-else src="./images/pizza/Bread/Bread_4.png" alt="">
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div :class="{rotateLeft:imageSwap==false,rotateRight:leftSwap==false}" class="pizza-main-box">
                         <div class="plate">
                             <img class="plates" src="./images/pizza/Plate.png" alt="">
-                            <div class="bread">
+                            <!-- <div class="bread">
                                 <img src="./images/pizza/Bread/Bread_1.png" alt="">
-                            </div>
+                            </div> -->
                         </div>
                         <div class="veg-parts">
                             <div class="vp-image">

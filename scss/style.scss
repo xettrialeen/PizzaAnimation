@@ -2,14 +2,15 @@
 
 @import "./parts/heading";
 @import "./parts/pizza-content";
+@import "./parts/animation";
 
 * {
   margin: 0;
   padding: 0;
-  -webkit-tap-highlight-color: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
-  background-color: #2c2f38;
+  background-color: #e5f8ff;
   overflow: hidden;
 }

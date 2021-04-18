@@ -1,0 +1,51 @@
+@import "../modules/functions";
+@import "../modules/variables";
+
+// .anime1 {
+//   position: relative;
+//   top: 100px;
+//   animation: anime1 2.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+//   -webkit-animation: anime1 2.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+//   @keyframes anime1 {
+//     0% {
+//       top: -50px;
+//     }
+//     100% {
+//     }
+//   }
+// }
+
+// .fade-enter-active,
+// .fade-leave-active {
+//   transition: opacity 0.1s ease-out;
+// }
+
+// .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+//   opacity: 0;
+// }
+
+.bl2fade-enter-active,
+.bl2fade-leave-active {
+  position: relative;
+  bottom: -155px;
+  transition: opacity 0.5s;
+  transform: scale(0.2);
+  -webkit-transform: scale(0.2);
+  -moz-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  -o-transform: scale(0.2);
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+}
+.bl2fade-enter,
+.bl2fade-leave-active {
+  opacity: 0;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
