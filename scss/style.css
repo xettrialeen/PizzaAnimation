@@ -58,6 +58,7 @@
   padding: 100px;
 }
 .pizza-content .pizza-wrapper .pizza-first {
+  z-index: 1000 !important;
   margin-top: -150px;
   background-color: #ffffff;
   padding-top: 90px;
@@ -707,6 +708,7 @@
   -o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .nextPage .pizzaExtras {
+  z-index: 1000 !important;
   display: block !important;
   position: absolute;
   width: 100%;

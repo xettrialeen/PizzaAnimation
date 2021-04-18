@@ -50,6 +50,7 @@
   }
 
   .pizzaExtras {
+    z-index: 1000 !important;
     display: block !important;
     position: absolute;
     width: 100%;
