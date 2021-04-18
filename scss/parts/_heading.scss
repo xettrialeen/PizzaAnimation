@@ -2,6 +2,7 @@
 @import "../modules/variables";
 
 #pizza {
+  background-color: #e5f8ff;
   header {
     padding: 20px;
     @include flex-row();

@@ -32,7 +32,7 @@
 
 
     <div id="pizza">
-        <header>
+        <header :style="[nextpage==false?{'background-color':'#ffffff'}:{'background-color':'#e5f8ff'}]">
             <div class="right-header">
                 <h2>Pizzas</h2>
             </div>
@@ -49,7 +49,7 @@
         </header>
         <div class="pizza-content">
             <div class="pizza-wrapper">
-                <div class="pizza-first">
+                <div :class="{nextPage:nextpage==false}" class="pizza-first">
                     <div class="pizza-breads">
 
                         <!-- c bl1 -->
@@ -69,7 +69,7 @@
                         </div>
 
                         <!-- c bl3 -->
-                        <div class="bread-list  bl3">
+                        <div @click="nextPageFunc()" class="bread-list  bl3">
                             <div :class="{leftbl3:leftSwap===false}" class="left-image">
                                 <img v-if="imageSwap === true" src=" ./images/pizza/Bread/Bread_3.png" alt="">
                                 <img v-else src=" ./images/pizza/Bread/Bread_1.png" alt="">
@@ -101,6 +101,33 @@
                                 <img class="vp4" src="./images/pizza/Mushroom/Mushroom_1.png" alt="">
                                 <img class="vp5" src="./images/pizza/Onion/Onion_1.png" alt="">
                                 <img class="vp6" src="./images/pizza/Sausage/Sausage_1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pizzaExtras">
+                        <div class="pe-wrapper">
+                            <div class="image-choose">
+                                <div class="image-relative">
+                                    <div class="i-lists il1">
+                                        <img src="./images/pizza/Extra/GreenSweetPepper.png" alt="">
+                                    </div>
+                                    <div class="i-lists il2">
+                                        <img src="./images/pizza/Extra/Pineapple.png" alt="">
+                                    </div>
+                                    <div class="i-lists il3">
+                                        <img src="./images/pizza/Extra/Red Bell Pepper Chop.png" alt="">
+                                    </div>
+                                    <div class="i-lists il4">
+                                        <img src="./images/pizza/Extra/Red Bell Pepper Sliced.png" alt="">
+                                    </div>
+                                    <div class="i-lists il5">
+                                        <img src="./images/pizza/Extra/Thyme branch.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="images-list">
+
                             </div>
                         </div>
                     </div>

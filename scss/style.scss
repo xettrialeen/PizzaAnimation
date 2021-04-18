@@ -3,6 +3,7 @@
 @import "./parts/heading";
 @import "./parts/pizza-content";
 @import "./parts/animation";
+@import "./parts/nextpage";
 
 * {
   margin: 0;
@@ -11,6 +12,5 @@
 }
 
 html {
-  background-color: #e5f8ff;
   overflow: hidden;
 }

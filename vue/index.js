@@ -5,8 +5,17 @@ const pizza = new Vue({
     imageSwap: true,
     leftSwap: true,
     bl2: true,
+    nextpage: true,
   },
   methods: {
+    // c nextpage opener
+
+    nextPageFunc() {
+      this.nextpage = false;
+      console.log(this.nextpage);
+    },
+
+    // c firstpage
     swapFunc() {
       this.imageSwap = !this.imageSwap;
       this.leftSwap = true;
